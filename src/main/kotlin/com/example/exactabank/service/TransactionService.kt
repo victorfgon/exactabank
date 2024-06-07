@@ -122,7 +122,7 @@ class TransactionService(
     }
 
     fun getTransactionById(id: Long): Transaction {
-        logger.info("Fetching transaction with ID: $id")
+        logger.info("Getting transaction with ID: $id")
         return try {
             val transaction =
                 transactionRepository.findById(id).orElseThrow {
